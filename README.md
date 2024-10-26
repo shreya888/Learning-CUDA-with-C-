@@ -1,4 +1,4 @@
-# Learning CUDA with C++
+# Learning CUDA with C++ & PyTorch
 My notes, exercises etc will be recorded here while learning CUDA with C++
 
 1. Cuda is Asynchronous
