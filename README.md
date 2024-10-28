@@ -30,7 +30,7 @@ This document contains key concepts, exercises/code practiced, and insights gain
     * To profile CUDA operations, provide argument `use_cuda=True` to the profile function. The profiler records the execution time of each operator, including the time spent on kernel launches and GPU execution. The results can be analyzed to identify performance bottlenecks or inefficiencies.
     * Key Insight: Profiling is an essential tool in CUDA development. PyTorch's autograd profiler can obtain in-depth insights into the performance of both CPU and GPU operations, allowing for targeted optimizations.
 
-5. ATen Library (atten::<some_function_name>)
+5. ATen Library (`atten::<some_function_name>`)
    * ATen (Abstract Tensor) is PyTorch's backend library for tensor operations. It provides the low-level C++ implementation of mathematical operations on tensors.
    * In profiling, ATen functions (e.g., `aten::add`, `aten::matmul`) represent the underlying operations called by higher-level PyTorch functions. These operations eventually translate into CUDA kernel calls for execution on the GPU.
    * The profiler log shows a hierarchical breakdown of operations, starting from high-level calls down to specific CUDA instructions.
