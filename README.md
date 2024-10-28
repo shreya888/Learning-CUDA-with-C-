@@ -12,7 +12,9 @@ My notes, exercises etc will be recorded here while learning CUDA with C++
 3. Synchronize the code
    * `torch.cuda.synchronize` is used to synchronize the current device and waits until all GPU work in all streams is finished thus blocking the host from advancing. As CUDA operations are executed asynchronously w.r.t. the CPU, this prevents CPU thread from proceeding until the previous works are done.
 
-4. ATen (atten::<some_function_name>)
+4. ATen (atten::<some_function_name>) and Profiler
+    * The first step in performance optimization is to do profiling, e.g. to identify performance hotspots of a workload and bottlenecks in code. PyTorch has a built-in profiler in autograd module, called `PyTorch autograd profiler`.
+    * To use, tell torch.autograd engine to keep a record of execution time of each operator under this line of code `with torch.autograd.profiler.profile() as prof:`. For CUDA profiling, you need to provide argument `use_cuda=True`.
     * ATen is the Torch C++ tensor math library. This first row of operations represents the direct translation of our code calling the high-level operations in ATen.
     * Each successive row underneath represents a function called by the function in the row above. The operations become more specific, from aten::mul to aten::sqrt (example from torch.sqrt(vector * vector) implementation in pytorch_abs.py), until we are finally ready to send an instruction to the GPU.
   
