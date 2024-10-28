@@ -11,6 +11,10 @@ My notes, exercises etc will be recorded here while learning CUDA with C++
 
 3. Synchronize the code
    * `torch.cuda.synchronize` is used to synchronize the current device and waits until all GPU work in all streams is finished thus blocking the host from advancing. As CUDA operations are executed asynchronously w.r.t. the CPU, this prevents CPU thread from proceeding until the previous works are done.
+
+4. ATen (atten::<some_function_name>)
+    * ATen is the Torch C++ tensor math library. This first row of operations represents the direct translation of our code calling the high-level operations in ATen.
+    * Each successive row underneath represents a function called by the function in the row above. The operations become more specific, from aten::mul to aten::sqrt (example from torch.sqrt(vector * vector) implementation in pytorch_abs.py), until we are finally ready to send an instruction to the GPU.
   
 
 References
@@ -20,3 +24,5 @@ References
 4. https://forums.developer.nvidia.com/
 5. https://discuss.pytorch.org
 6. https://pytorch.org/docs
+7. https://wandb.ai/wandb/trace/reports/Using-the-PyTorch-Profiler-with-W-B--Vmlldzo5MDE3NjU
+8. https://gist.github.com/mingfeima/e08310d7e7bb9ae2a693adecf2d8a916
