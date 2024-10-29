@@ -48,7 +48,7 @@ This document contains key concepts, exercises/code practiced, and insights gain
      * Synchronizing CPU and GPU using torch.cuda.synchronize() is crucial when measuring the execution time of CUDA operations.
 
 
-References
+**Reading List:**
 1. https://github.com/gpu-mode/lectures/tree/main
 2. https://www.youtube.com/@GPUMODE
 3. https://github.com/CisMine/Parallel-Computing-Cuda-C - studied till chapter 3 today
@@ -58,3 +58,5 @@ References
 7. https://wandb.ai/wandb/trace/reports/Using-the-PyTorch-Profiler-with-W-B--Vmlldzo5MDE3NjU
 8. https://gist.github.com/mingfeima/e08310d7e7bb9ae2a693adecf2d8a916
 9. https://users.wfu.edu/choss/CUDA/lectures.html - studied till lecture 3, 4 half
+10. https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/
+11. https://docs.nvidia.com/cuda/cuda-c-programming-guide/
