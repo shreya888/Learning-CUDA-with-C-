@@ -51,7 +51,7 @@ This document contains key concepts, exercises/code practiced, and insights gain
 References
 1. https://github.com/gpu-mode/lectures/tree/main
 2. https://www.youtube.com/@GPUMODE
-3. https://github.com/CisMine/Parallel-Computing-Cuda-C
+3. https://github.com/CisMine/Parallel-Computing-Cuda-C - studied till chapter 4 today
 4. https://forums.developer.nvidia.com/
 5. https://discuss.pytorch.org
 6. https://pytorch.org/docs
