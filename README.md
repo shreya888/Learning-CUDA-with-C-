@@ -49,14 +49,15 @@ This document contains key concepts, exercises/code practiced, and insights gain
 
 
 **Reading List:**
-1. https://github.com/gpu-mode/lectures/tree/main
+1. https://github.com/gpu-mode/lectures
 2. https://www.youtube.com/@GPUMODE
-3. https://github.com/CisMine/Parallel-Computing-Cuda-C - studied till chapter 3 today
-4. https://forums.developer.nvidia.com/
-5. https://discuss.pytorch.org
-6. https://pytorch.org/docs
-7. https://wandb.ai/wandb/trace/reports/Using-the-PyTorch-Profiler-with-W-B--Vmlldzo5MDE3NjU
-8. https://gist.github.com/mingfeima/e08310d7e7bb9ae2a693adecf2d8a916
-9. https://users.wfu.edu/choss/CUDA/lectures.html - studied till lecture 3, 4 half
-10. https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/
-11. https://docs.nvidia.com/cuda/cuda-c-programming-guide/
+3. https://github.com/olcf/cuda-training-series
+4. https://github.com/CisMine/Parallel-Computing-Cuda-C - studied till chapter 3 today
+5. https://forums.developer.nvidia.com
+6. https://discuss.pytorch.org
+7. https://pytorch.org/docs
+8. https://wandb.ai/wandb/trace/reports/Using-the-PyTorch-Profiler-with-W-B--Vmlldzo5MDE3NjU
+9. https://gist.github.com/mingfeima/e08310d7e7bb9ae2a693adecf2d8a916
+10. https://users.wfu.edu/choss/CUDA/lectures.html - studied till lecture 3, 4 half
+11. https://docs.nvidia.com/cuda/cuda-c-best-practices-guide
+12. https://docs.nvidia.com/cuda/cuda-c-programming-guide
