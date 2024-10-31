@@ -48,6 +48,16 @@ This document contains key concepts, exercises/code practiced, and insights gain
      * Synchronizing CPU and GPU using torch.cuda.synchronize() is crucial when measuring the execution time of CUDA operations.
 
 
+### Terms to Remember:
+1. GPU Kernel (functions)
+2. Thread, Block, Grid
+3. Host (CPU), Device (GPU)
+4. Streaming Processors(SPs or cores)
+5. Streaming Multiprocessor (SM or multiprocessor)
+6. Warp
+7. SIMD (Single Instruction, Multiple Data)
+8. 
+
 **Reading List:**
 1. https://github.com/gpu-mode/lectures
 2. https://www.youtube.com/@GPUMODE
