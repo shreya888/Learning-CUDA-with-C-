@@ -4,7 +4,7 @@ These exercises were to practice the concept of Shared Memory on the GPU.
 
 ## **1. 1D Stencil Using Shared Memory**
 
-Created a 1D stencil application that uses shared memory. The code skeleton was provided and modified in *stencil_1d.cu*. Editted that file by adding code and many comments. The code was verified against the output and would report any errors.
+Created a 1D stencil application that uses shared memory. The code skeleton was provided and modified in *stencil_1d.cu*. A stencil operation is commonly used in signal processing, image processing, and numerical methods where each element of the output array depends on a small region of the input array. Editted that file by adding code and many comments. The code was verified against the output and would report any errors.
 
 ## **2. 2D Matrix Multiply Using Shared Memory**
 
