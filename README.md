@@ -57,7 +57,8 @@ This document contains key concepts, exercises/code practiced, and insights gain
 6. Warp
 7. CPU: SIMD (Single Instruction, Multiple Data)
 8. GPU: SIMT (Single Instruction, Multiple Threads)
-9. Physical and Lofical Memory
+9. Physical and Logical Memory
+10. Data Transfer, Global memory, Local memory and registers, Constant Memory
 
 **Reading List:**
 1. https://github.com/gpu-mode/lectures
