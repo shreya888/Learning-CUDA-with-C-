@@ -55,8 +55,9 @@ This document contains key concepts, exercises/code practiced, and insights gain
 4. Streaming Processors(SPs or cores)
 5. Streaming Multiprocessor (SM or multiprocessor)
 6. Warp
-7. SIMD (Single Instruction, Multiple Data)
-8. 
+7. CPU: SIMD (Single Instruction, Multiple Data)
+8. GPU: SIMT (Single Instruction, Multiple Threads)
+9. Physical and Lofical Memory
 
 **Reading List:**
 1. https://github.com/gpu-mode/lectures
