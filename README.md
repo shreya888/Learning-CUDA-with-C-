@@ -71,6 +71,6 @@ This document contains key concepts, exercises/code practiced, and insights gain
 7. https://pytorch.org/docs
 8. https://wandb.ai/wandb/trace/reports/Using-the-PyTorch-Profiler-with-W-B--Vmlldzo5MDE3NjU
 9. https://gist.github.com/mingfeima/e08310d7e7bb9ae2a693adecf2d8a916
-10. https://users.wfu.edu/choss/CUDA/lectures.html - studied till lecture 3, 4 half
+10. https://users.wfu.edu/choss/CUDA/lectures.html - studied till lecture 5
 11. https://docs.nvidia.com/cuda/cuda-c-best-practices-guide
 12. https://docs.nvidia.com/cuda/cuda-c-programming-guide
