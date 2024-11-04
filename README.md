@@ -54,11 +54,12 @@ This document contains key concepts, exercises/code practiced, and insights gain
 3. Host (CPU), Device (GPU)
 4. Streaming Processors(SPs or cores)
 5. Streaming Multiprocessor (SM or multiprocessor)
-6. Warp
+6. Warp (smallest unit (32 threads gen.) of execution on the device)
 7. CPU: SIMD (Single Instruction, Multiple Data)
 8. GPU: SIMT (Single Instruction, Multiple Threads)
 9. Physical and Logical Memory
 10. Data Transfer, Global memory, Local memory and registers, Constant Memory
+11. Multithreading, Latency Hiding and Thread divergence
 
 **Reading List:**
 1. https://github.com/gpu-mode/lectures
