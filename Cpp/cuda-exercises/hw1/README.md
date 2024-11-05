@@ -89,6 +89,7 @@ This code performs element-wise vector addition on the GPU using CUDA. Here's an
        - `kind`: Type of transfer, specified by one of the `cudaMemcpyKind` enum values - `cudaMemcpyHostToDevice`, `cudaMemcpyDeviceToHost`, `cudaMemcpyDeviceToDevice`, or `cudaMemcpyHostToHost`. This specifies the direction of the copy.
      - e.g. `cudaMemcpy(d_A, h_A, DSIZE*sizeof(float), cudaMemcpyHostToDevice);`: This copies `DSIZE`(=4096) floats from host memory `h_A` to device memory `d_A`.
      - e.g. `cudaMemcpy(h_C, d_C, DSIZE*sizeof(float), cudaMemcpyDeviceToHost);`: This copies `DSIZE`(=4096) floats from device memory `d_A` to host memory `h_A`.
+     - Return Value: Returns a `cudaError_t` value indicating success or failure of the copy. Common errors include `cudaErrorInvalidValue`, `cudaErrorInvalidDevicePointer`, and `cudaErrorInvalidMemcpyDirection`.
 
 ### Output
 The output when complete would looked like this:
