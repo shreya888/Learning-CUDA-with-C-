@@ -73,7 +73,7 @@ This code performs element-wise vector addition on the GPU using CUDA. Here's an
      - `blockDim.x * blockIdx.x`: Computes the total number of threads in all preceding blocks. This product gives the offset needed to find the correct position of the first thread in the current block within the global array.
 
 4. **Memory Management and Data Transfer**:
-   - **`cudaMalloc`**: Allocates size bytes of linear memory on the GPU device and returns in *devPtr a pointer to the allocated memory.
+   - **`cudaMalloc`**: Allocates size bytes of linear memory on the GPU device and returns in `*devPtr` a pointer to the allocated memory.
      - Analogous to `malloc` in C for memory allocation on the host, but `cudaMalloc` allocates memory in the global memory space of the CUDA device.
      - Syntax: `cudaMalloc(void** devPtr, size_t size);`
        - `devPtr`: Pointer to the allocated device memory.
