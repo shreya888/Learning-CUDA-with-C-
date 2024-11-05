@@ -6,8 +6,8 @@ These exercises were to practice the concept of Shared Memory on the GPU.
 
 Created a 1D stencil application that uses shared memory. The code skeleton was provided and modified in *stencil_1d.cu*. A stencil operation is commonly used in signal processing, image processing, and numerical methods where each element of the output array depends on a small region of the input array. Editted that file by adding code and many comments. The code was verified against the output and would report any errors.
 
-In a simple 1D stencil operation with a radius of 1, the output at each index `i` might be computed as:
-```output[i]=input[i−1]+input[i]+input[i+1]```
+In a simple 1D stencil operation with a radius of `r`, the output at each index `i` might be computed as: $\text{output}[i] = \sum_{j=-R}^{R} \text{input}[i + j]$
+
 
 ## **2. 2D Matrix Multiply Using Shared Memory**
 
