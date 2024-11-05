@@ -58,7 +58,8 @@ This code performs element-wise vector addition on the GPU using CUDA. Here's an
 ### Insights
 
 1. **Error Checking Macro**:
-   - The **`cudaCheckErrors`** macro is defined to check for any CUDA errors after each CUDA runtime API call. If an error is encountered, it prints an error message and aborts the program.
+   - The **`cudaCheckErrors`** macro is defined to check and report for any CUDA errors after every CUDA API call.
+   - If an error is encountered, it prints the message, error description, and location in the file, and then exits the program.
    - Good practice to rigorously check these error codes. The provided macro makes this job easier.
 
 2. **Constant Definitions**:
