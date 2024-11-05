@@ -1,6 +1,8 @@
 # Learning CUDA with C++ & PyTorch: Notes and Code
-This document contains key concepts, exercises/code practiced, and insights gained while learning CUDA (Compute Unified Device Architecture) programming using C++ and PyTorch. 
+This repository documents key concepts, exercises, and insights gained from my exploration of CUDA (Compute Unified Device Architecture) programming, with examples in both C++ and PyTorch. This repo focuses on understanding and implementing CUDA to enhance code performance in C++ and PyTorch. The repository contains commented code examples, conceptual explanations, and a curated list of resources.
 
+
+## Key Learning Points
 1. **Cuda is Asynchronous**
    * Asynchronous programming is a technique that allows a program to start a long-running task while still being able to respond to other events.
    * CUDA operations, including kernel launches and memory transfers, are executed asynchronously with respect to the host (CPU). This means that after launching a task on the GPU, the CPU can continue executing other instructions without waiting for the GPU to complete its task. This parallelism between CPU and GPU can significantly improve performance in computational workloads by maximizing hardware utilization.
