@@ -61,7 +61,7 @@ This document contains key concepts, exercises/code practiced, and insights gain
 10. Data Transfer, Global memory, Local memory and registers, Constant Memory
 11. Multithreading, Latency Hiding and Thread divergence
 
-**Reading List:**
+**My Current Reading List:**
 1. https://github.com/gpu-mode/lectures
 2. https://www.youtube.com/@GPUMODE
 3. https://github.com/olcf/cuda-training-series
