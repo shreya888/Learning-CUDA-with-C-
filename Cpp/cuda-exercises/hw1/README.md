@@ -75,14 +75,14 @@ This code performs element-wise vector addition on the GPU using CUDA. Here's an
 4. **Memory Management and Data Transfer**:
    - **`cudaMalloc`**: Allocates size bytes of linear memory on the GPU device and returns in `*devPtr` a pointer to the allocated memory.
      - Analogous to `malloc` in C for memory allocation on the host, but `cudaMalloc` allocates memory in the global memory space of the CUDA device.
-     - Syntax: `cudaMalloc(void** devPtr, size_t size);`
+     - **Syntax**: `cudaMalloc(void** devPtr, size_t size);`
        - `devPtr`: Pointer to the allocated device memory.
        - `size`: Requested memory allocation size in bytes.
      - e.g. `cudaMalloc(&d_A, DSIZE*sizeof(float));`: This allocates memory for `DSIZE`(=4096) floats on the device for A matrix.
      - Return Value: Returns a `cudaError_t` value that can be checked to ensure the allocation was successful. Common errors include `cudaErrorMemoryAllocation` if the GPU does not have enough memory to fulfill the request.
        
    - **`cudaMemcpy`**: Copies data (`count` bytes) between host and device memory and vice versa, depending on the direction specified by the `kind` parameter.
-     - Syntax: `cudaMemcpy(void* dst, const void* src, size_t count, cudaMemcpyKind kind);`
+     - **Syntax**: `cudaMemcpy(void* dst, const void* src, size_t count, cudaMemcpyKind kind);`
        - `dst`: Destination memory address (can be either device or host memory).
        - `src`: Source memory address (can be either device or host memory).
        - `count`: Number of bytes to copy.
