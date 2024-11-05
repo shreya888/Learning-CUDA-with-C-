@@ -101,8 +101,38 @@ C[0] = 0.564837
 ```
 
 
-## **3. Matrix Multiply (naive)**
+## **3. Matrix Multiply (Naive)**
 
-A skeleton naive matrix multiply was given in `matrix_mul.cu`. I am trying to complete it to get a correct result.
+This code performs naive matrix multiplication on GPU between 2 square matrices of size `DSIZE x DSIZE`. This exercise introduced 2D threadblock/grid indexing. This code included built-in error checking, so a correct result is indicated by the program on host. Here’s an explanation of the key parts of this CUDA matrix multiplication program:
 
-This exercise introduced 2D threadblock/grid indexing. This code included built-in error checking, so a correct result is indicated by the program.
+### Insights
+
+1. **Grid and Block Dimensions**:
+   - The kernel launch utilizes `dim3` to define the block and grid dimensions:
+     - `dim3 block(block_size, block_size);` sets both dimensions of the block to `block_size`, allowing for a 2D configuration.
+     - `dim3 grid((DSIZE + block.x - 1) / block.x, (DSIZE + block.y - 1) / block.y);` calculates the number of blocks needed for both dimensions by considering any remaining elements that do not completely fill a block into a new block. This ensures all elements are covered, even if the total does not evenly divide by `block_size`.
+
+2. **CUDA Kernel `mmul`**:
+   - The `mmul` kernel performs the matrix multiplication, where each thread computes an element in matrix C by multiplying a row of A and a column of B.
+   - Matrix Bounds Check:
+      - Inside the kernel, the matrix bounds check `if ((idx < ds) && (idy < ds))` ensures that the threads do not access memory outside the allocated range for matrices A, B, and C.
+      - This is critical to avoid segmentation faults or accessing unallocated memory.
+   - Accumulating the Dot Product:
+      - The loop `for (int i = 0; i < ds; i++)` computes the dot product of the row from matrix A and the column from matrix B. Each thread computes one entry of the resulting matrix C.
+      - The dot product is accumulated in the `temp` variable, which is subsequently stored in `C[idy * ds + idx]`.
+3. **Performance Measurement**:
+   - `clock_t` and `clock()` are used to measure the time taken for 1) initialization (host memory allocation and data setup) and 2) kernel execution (including data transfers and computation). This can help in analyzing the efficiency of the GPU computation relative to other implementations.
+   - Timing calculations convert the clock ticks into seconds by dividing by `CLOCKS_PER_SEC`, giving insight into the performance of the host initialization and GPU execution phases.
+
+4. **Error Handling and Result Verification**:
+   - After the kernel execution and data transfer back to the host, the program checks for errors using the `cudaCheckErrors` macro. This step ensures that any issues in the kernel execution or memory operations are caught early.
+   - The final verification loop checks if each element in the result matrix `h_C` matches the expected value, calculated as `A_val * B_val * DSIZE`. This provides a simple but effective way to confirm that the matrix multiplication was performed correctly.
+
+
+### Output
+Upon successful execution, the output confirms both the successful computation and match verification, indicating that the matrices were multiplied correctly. If there were mismatches in the verification process, an error message would indicate the index of the mismatch and the expected vs. actual value.
+```
+Init took 0.115000 seconds.  Begin compute
+Done. Compute took 1.087000 seconds
+Success!
+```
