@@ -3,9 +3,9 @@
 In Homework 1, I practiced foundational CUDA programming skills, including GPU memory allocation, data transfer between the host CPU and GPU, and kernel launching. Each exercise provided a code skeleton, which I completed by filling in essential CUDA functions and logic.
 
 ## Exercise Overview
-* **Hello World** - A simple parallel "Hello World" program using CUDA.
-* **Vector Add** - A basic element-wise vector addition program.
-* **Matrix Multiply (Naive)** - A naive implementation of matrix multiplication, using 2D threadblock/grid indexing.
+* **Hello World** - [`hello.cu`](./hello.cu) - A simple parallel "Hello World" program using CUDA.
+* **Vector Add** - [`vector_add.cu`](./vector_add.cu) - A basic element-wise vector addition program.
+* **Matrix Multiply (Naive)** - [`matrix_mul.cu`](./matrix_mul.cu) - A naive implementation of matrix multiplication, using 2D threadblock/grid indexing.
 
 
 ## **1. Hello World**
