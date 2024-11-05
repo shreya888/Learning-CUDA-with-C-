@@ -6,6 +6,6 @@ The OLCF CUDA Training Series offers a set of exercises that progressively build
 
 ### Structure
 The exercises are organized into homework sets, each containing multiple questions:
-* Homework Sets: Each set (e.g., hw1, hw2) includes several questions that build on key CUDA concepts.
-* Question-Specific Explanation in ReadMes: Each set includes a README file providing an overview of the questions contained, detailing my approach and key implementation decisions.
-* Extensive Code Comments: Each solution is documented with thorough comments, explaining the basic functunalities and CUDA kernel implementations, insights, and more to help guide readers through the code logic.
+* **Homework Sets**: Each set (e.g., hw1, hw2) includes several questions that build on key CUDA concepts.
+* **Question-Specific Explanation in ReadMes**: Each set includes a README file providing an overview of the questions contained, detailing my approach and key implementation decisions.
+* **Extensive Code Comments**: Each solution is documented with thorough comments, explaining the basic functunalities and CUDA kernel implementations, insights, and more to help guide readers through the code logic.
