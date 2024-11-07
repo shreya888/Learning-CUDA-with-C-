@@ -39,14 +39,19 @@ This repository documents key concepts, exercises, and insights gained from my e
 ## My Current Learning List:
 1. https://github.com/gpu-mode/lectures
 2. https://www.youtube.com/@GPUMODE
-3. https://github.com/olcf/cuda-training-series
-4. https://github.com/CisMine/Parallel-Computing-Cuda-C - studied till chapter 8 today (MUST READ - very simplified topics with great analogies and examples, easy to follow)
-5. https://forums.developer.nvidia.com
-6. https://discuss.pytorch.org
-7. https://pytorch.org/docs
-8. https://wandb.ai/wandb/trace/reports/Using-the-PyTorch-Profiler-with-W-B--Vmlldzo5MDE3NjU
-9. https://gist.github.com/mingfeima/e08310d7e7bb9ae2a693adecf2d8a916
-10. https://users.wfu.edu/choss/CUDA/lectures.html - studied till lecture 6 (MUST READ - well explained code and concepts)
-11. https://developer.nvidia.com/blog/easy-introduction-cuda-c-and-c
-12. https://docs.nvidia.com/cuda/cuda-c-best-practices-guide
-13. https://docs.nvidia.com/cuda/cuda-c-programming-guide
+3. https://www.youtube.com/@pmpp-book
+4. https://github.com/olcf/cuda-training-series
+5. https://github.com/CisMine/Parallel-Computing-Cuda-C - studied till chapter 8 today (MUST READ - very simplified topics with great analogies and examples, easy to follow)
+6. https://forums.developer.nvidia.com
+7. https://discuss.pytorch.org
+8. https://pytorch.org/docs
+9. https://wandb.ai/wandb/trace/reports/Using-the-PyTorch-Profiler-with-W-B--Vmlldzo5MDE3NjU
+10. https://gist.github.com/mingfeima/e08310d7e7bb9ae2a693adecf2d8a916
+11. https://users.wfu.edu/choss/CUDA/lectures.html - studied till lecture 6 (MUST READ - well explained code and concepts)
+12. https://developer.nvidia.com/blog/easy-introduction-cuda-c-and-c
+13. https://docs.nvidia.com/cuda/cuda-c-best-practices-guide
+14. https://docs.nvidia.com/cuda/cuda-c-programming-guide
+15. https://www.amazon.com/Programming-Massively-Parallel-Processors-Hands/dp/0323912311
+16. https://edoras.sdsu.edu/~mthomas/docs/cuda/cuda_by_example.book.pdf
+17. https://github.com/srush/GPU-Puzzles
+18. https://github.com/gpu-mode/resource-stream?tab=readme-ov-file - comprehensive list of CUDA/GPU resources
