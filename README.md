@@ -47,5 +47,6 @@ This repository documents key concepts, exercises, and insights gained from my e
 8. https://wandb.ai/wandb/trace/reports/Using-the-PyTorch-Profiler-with-W-B--Vmlldzo5MDE3NjU
 9. https://gist.github.com/mingfeima/e08310d7e7bb9ae2a693adecf2d8a916
 10. https://users.wfu.edu/choss/CUDA/lectures.html - studied till lecture 6 (MUST READ - well explained code and concepts)
-11. https://docs.nvidia.com/cuda/cuda-c-best-practices-guide
-12. https://docs.nvidia.com/cuda/cuda-c-programming-guide
+11. https://developer.nvidia.com/blog/easy-introduction-cuda-c-and-c
+12. https://docs.nvidia.com/cuda/cuda-c-best-practices-guide
+13. https://docs.nvidia.com/cuda/cuda-c-programming-guide
