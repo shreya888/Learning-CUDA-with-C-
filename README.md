@@ -34,8 +34,8 @@ This repository documents key concepts, exercises, and insights gained from my e
 8. Physical (SMs and SPs) and Logical Memory (Virtual) (blocks, threads)
 9. Prefetching, Data Transfer, Global memory, Local memory, Registers, Constant Memory
 10. Synchronization and Asynchronization, Multithreading, Latency Hiding, Thread divergence
-11. Unified memory, Zero Copy, Page faults
-12. Pagable and Pinned Memory
+11. Unified memory, Zero Copy, Page faults; cudaMemAdvise<(Un)SetReadMostly | (Un)SetPreferredLocation | (Un)SetAccessedBy>, cudaMemPrefetchAsync
+12. Pagable and Pinned Memory; cudaMallocHost
 
 ## My Current Learning List:
 1. https://github.com/gpu-mode/lectures
