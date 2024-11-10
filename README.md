@@ -28,13 +28,14 @@ This repository documents key concepts, exercises, and insights gained from my e
 2. Thread, Block, Grid
 3. Host (CPU), Device (GPU)
 4. Streaming Processors(SPs or cores), Streaming Multiprocessor (SM or multiprocessor)
-6. Warp (smallest unit (32 threads gen.) of execution on the device)
-7. CPU: SIMD (Single Instruction, Multiple Data)
-8. GPU: SIMT (Single Instruction, Multiple Threads)
-9. Physical (SMs and SPs) and Logical Memory (Virtual) (blocks, threads)
-10. Prefetching, Data Transfer, Global memory, Local memory, Registers, Constant Memory
-11. Synchronization and Asynchronization, Multithreading, Latency Hiding, Thread divergence
-12. Unified memory, Zero Copy, Page faults
+5. Warp (smallest unit (32 threads gen.) of execution on the device)
+6. CPU: SIMD (Single Instruction, Multiple Data)
+7. GPU: SIMT (Single Instruction, Multiple Threads)
+8. Physical (SMs and SPs) and Logical Memory (Virtual) (blocks, threads)
+9. Prefetching, Data Transfer, Global memory, Local memory, Registers, Constant Memory
+10. Synchronization and Asynchronization, Multithreading, Latency Hiding, Thread divergence
+11. Unified memory, Zero Copy, Page faults
+12. Pagable and Pinned Memory
 
 ## My Current Learning List:
 1. https://github.com/gpu-mode/lectures
