@@ -27,21 +27,21 @@ This repository documents key concepts, exercises, and insights gained from my e
 1. GPU Kernel (functions)
 2. Thread, Block, Grid
 3. Host (CPU), Device (GPU)
-4. Streaming Processors(SPs or cores)
-5. Streaming Multiprocessor (SM or multiprocessor)
+4. Streaming Processors(SPs or cores), Streaming Multiprocessor (SM or multiprocessor)
 6. Warp (smallest unit (32 threads gen.) of execution on the device)
 7. CPU: SIMD (Single Instruction, Multiple Data)
 8. GPU: SIMT (Single Instruction, Multiple Threads)
-9. Physical and Logical Memory
-10. Data Transfer, Global memory, Local memory and registers, Constant Memory
-11. Multithreading, Latency Hiding and Thread divergence
+9. Physical (SMs and SPs) and Logical Memory (Virtual) (blocks, threads)
+10. Prefetching, Data Transfer, Global memory, Local memory, Registers, Constant Memory
+11. Synchronization and Asynchronization, Multithreading, Latency Hiding, Thread divergence
+12. Unified memory, Zero Copy, Page faults
 
 ## My Current Learning List:
 1. https://github.com/gpu-mode/lectures
 2. https://www.youtube.com/@GPUMODE
 3. https://www.youtube.com/@pmpp-book
 4. https://github.com/olcf/cuda-training-series
-5. https://github.com/CisMine/Parallel-Computing-Cuda-C - studied till chapter 8 today (MUST READ - very simplified topics with great analogies and examples, easy to follow)
+5. https://github.com/CisMine/Parallel-Computing-Cuda-C - studied till chapter 10 today (MUST READ - very simplified topics with great analogies and examples, easy to follow)
 6. https://forums.developer.nvidia.com
 7. https://discuss.pytorch.org
 8. https://pytorch.org/docs
