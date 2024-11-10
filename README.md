@@ -42,7 +42,7 @@ This repository documents key concepts, exercises, and insights gained from my e
 2. https://www.youtube.com/@GPUMODE
 3. https://www.youtube.com/@pmpp-book
 4. https://github.com/olcf/cuda-training-series
-5. https://github.com/CisMine/Parallel-Computing-Cuda-C - studied till chapter 10 today (MUST READ - very simplified topics with great analogies and examples, easy to follow)
+5. https://github.com/CisMine/Parallel-Computing-Cuda-C - studied till chapter 11 today (MUST READ - very simplified topics with great analogies and examples, easy to follow)
 6. https://forums.developer.nvidia.com
 7. https://discuss.pytorch.org
 8. https://pytorch.org/docs
